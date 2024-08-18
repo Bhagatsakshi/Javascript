@@ -30,3 +30,26 @@ const myFun=function(){
 }
 
 // null datatype is object
+
+// stack (primitive)   heap(non primitive)
+
+let myName='abc'
+anotherName=myName
+anotherName='xyz'
+
+console.log(myName);     //-->abc
+console.log(anotherName);     //-->xyz
+//in stack ,values copy is changing not a value
+
+myUser={
+    name:'mon',
+    age:56
+}
+
+myInfo=myUser
+myInfo.age=90
+
+console.log(myUser.age);       //-->90
+console.log(myInfo.age);       //-->90
+// chnages made on original value 
+
