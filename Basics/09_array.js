@@ -57,7 +57,7 @@ const f2 = ['jai','jui','periwinkle']
 // const allflowers = flowers.concat(f2)    
 // console.log(allflowers);
 
-//spread out
+//spread out(most prefer ,same as concat)
 const allFlowers = [...flowers,...f2]
 console.log(allFlowers);
 
