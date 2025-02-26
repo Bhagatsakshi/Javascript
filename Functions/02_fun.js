@@ -8,3 +8,16 @@ function calculatePrice(...num1){    //rest operator ,wil make arr of prices
 
 console.log(calculatePrice(200,400,300));
 
+//nested fucntion
+function one() {
+    const user="abc"
+    function two() {
+        const web="google"
+        console.log(user);    //abc
+    }
+    // console.log(web); cannot access outside the scope
+    two()
+}
+one()
+//this scope level also happen in if 
+
