@@ -1,2 +1,2 @@
 # Javascript
-Tutorial of complete javascript from Basic to Advance wuth projects
+Tutorial of complete javascript from Basic to Advance with projects
