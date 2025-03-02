@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>India is Home</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    /*const changeText = function name(params) {
+        document.querySelector('h1').
+        innerHTML='india is green';
+    }
+
+    setTimeout(printHello,2000)  //execute only once
+    const changeMe = setTimeout(changeText,2000)
+
+    document.querySelector('#stop').addEventListener('click',function () {
+        clearTimeout(changeMe)
+        console.log('stopped');
+        
+    })*/
+
+    const sayDate = function (str) {
+        console.log(str,Date.now());     
+    }
+    let i;
+    document.querySelector('#start').addEventListener('click',function () {
+        document.body.style.backgroundColor='green'
+        document.querySelector('h1').innerHTML='india is green';
+        i=setInterval(sayDate,3000,'Smile')
+        console.log('started');
+        
+    })
+    document.querySelector('#stop').addEventListener('click',function () {
+        document.body.style.backgroundColor='grey'
+        document.querySelector('h1').innerHTML='india is peace';
+        clearInterval(i)
+        console.log('stopped');
+    })
+
+</script>
+</html>
