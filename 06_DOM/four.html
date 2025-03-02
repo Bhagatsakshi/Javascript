@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Language List</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: aliceblue;
+    }
+</style>
+<body>
+    <ul class="language">
+        <li>Java</li>
+    </ul>
+</body>
+<script>
+        function addLanguage(LangName) {
+            const li = document.createElement('li');
+            li.innerHTML = `${LangName}`;
+            document.querySelector('.language').appendChild(li);
+        }
+        addLanguage("Python");
+        addLanguage("Javascript");
+
+        function addOptiLauguage(LangName) {
+            const li = document.createElement('li');
+            li.appendChild(document.createTextNode(LangName));
+            document.querySelector('.language').appendChild(li);
+        }
+        addOptiLauguage('Golang')
+
+        //Edit(Replace)
+        const secondLang=document.querySelector("li:nth-child(2)")
+        const newli=document.createElement('li')
+        newli.textContent="Mojo"
+        secondLang.replaceWith(newli)
+
+        //Ek aur edit
+        const lastlang=document.querySelector("li:last-child")
+        lastlang.outerHTML='<li>Typescript</li>'
+
+        //Remove
+        const first=document.querySelector('li:first-child')
+        first.remove()
+
+</script>
+</html>
