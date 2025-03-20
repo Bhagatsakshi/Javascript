@@ -53,3 +53,8 @@ console.log(myUser.age);       //-->90
 console.log(myInfo.age);       //-->90
 // chnages made on original value 
 
+/* ASCII
+A to Z- 65 to 90
+a to z- 97 to 122
+0 to 9- 48 to 57
+*/

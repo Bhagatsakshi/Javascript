@@ -1,3 +1,10 @@
+/*
+strings are immutable(not changing) but can adds new chars,ints to old one like
+(reassigning)
+let s ="hello" 
+s = s + "world" 
+*/
+
 const name='man'
 const repoCount=50
 
@@ -31,3 +38,11 @@ console.log(url.replace('%20','-'));
 console.log(url.includes('fresh'))   //-->false
 
 console.log(gameName.split('-'));
+
+let s = "world";
+console.log(s.slice(1,4));
+console.log(s.substring(3));
+console.log(s.toUpperCase());
+console.log(s.toLowerCase());
+console.log(s.concat(" ","hi"));
+console.log(s.trim(2));
