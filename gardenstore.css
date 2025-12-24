@@ -1,0 +1,8 @@
+/* GardenStore Theme Test */
+body {
+  border-top: 6px solid #2E7D32 !important;
+}
+
+.gs-header {
+  background-color: #2E7D32 !important;
+}
